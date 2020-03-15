@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  --default: #8686ff;
+  --default-dark: #7676e3;
+
+  --success: #72D67F;
+  --success-dark: #68C374;
+
+  --info: #F4BF2E;
+  --info-dark: #DEAE2A;
+
+  --danger: #E85A5A;
+  --danger-dark: #D35252;
+
+  --grey: #575757;
+}
+
+* {
+	font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
+}
+
+.cs_title {
+  font-family: "Roboto Black", sans-serif;
+
+}
+
+a:active, a:focus {
+  outline: 0;
+  -moz-outline-style: none;
+  text-decoration: underline;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button:active, button:focus {
+  outline: 0;
+  -moz-outline-style: none;
+}
+
+.cs_center {
+	text-align: center;
+	margin: auto;
+}
+
+.cs_center.middle {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.cs_rounded {
+	border-radius: 16px;
+}
+
+.cs_list.horiz {
+	display: inline-block;
+  text-align: center;
+  float: none;
+  list-style-type: none;
+}
+
+.cs_list.horiz a {
+  padding: 5px;
+}
+
+/* BUTTONS */
+.cs_btn {
+	background-color: var(--default);
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	font-size: 16px;
+	border-radius: 16px;
+}
+
+.cs_btn:hover {
+	background-color: var(--default-dark);
+}
+
+.cs_square {
+	border: none;
+	border-radius: 0px;
+	color: white;
+}
+
+.cs_btn_square:hover {
+	background-color: var(--default);
+}
+
+.cs_btn_round {
+	background-color: var(--default);
+	color: white;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 1.428571429;
+	border-radius: 50%;
+	border: none;
+}
+
+.cs_btn_round:hover {
+	background-color: var(--default-dark);
+}
+
+.cs_link {
+	background-color: white;
+	color: var(--default);
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.cs_link:hover {
+	background: #eee;
+}
+
+.cs_outline {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-color: white;
+	border: 2px solid var(--default);
+	color: var(--default);
+}
+
+.cs_outline:hover {
+	border: 2px solid var(--default-dark);
+	color: #fff;
+}
+
+/* COLORS */
+
+/* SUCCESS */
+.success {
+	color: var(--success);
+}
+
+.cs_btn.success {
+	background-color: var(--success);
+  color: #fff;
+}
+
+.cs_btn.success:hover {
+	background-color: var(--success-dark);
+  color: #fff;
+}
+
+.cs_btn_round.success {
+	background-color: var(--success);
+  color: #fff;
+}
+
+.cs_btn_round.success:hover {
+	background-color: var(--success-dark);
+  color: #fff;
+}
+
+.cs_outline.success {
+	border: 2px solid var(--success);
+	background-color: white;
+	color: var(--success);
+}
+
+.cs_outline.success:hover {
+	background-color: var(--success-dark);
+	border: 2px solid var(--success-dark);
+	color: white;
+}
+
+.cs_link.success {
+	background-color: white;
+	color: var(--success);
+}
+
+.cs_link.success:hover {
+	background-color: #eee;
+}
+
+th.success {
+	background-color: var(--success);
+  color: #fff;
+}
+
+tr.success {
+	background-color: var(--success);
+  color: #fff;
+}
+
+/* INFO */
+
+.info {
+	color: var(--info);
+}
+
+.cs_btn.info {
+	background-color: var(--info);
+  color: #fff;
+}
+
+.cs_btn.info:hover {
+	background-color: var(--info-dark);
+  color: #fff;
+}
+
+.cs_btn_round.info {
+	background-color: var(--info);
+  color: #fff;
+}
+
+.cs_btn_round.info:hover {
+	background-color: var(--info-dark);
+  color: #fff;
+}
+
+.cs_outline.info {
+	border: 2px solid var(--info);
+	background-color: white;
+	color: var(--info);
+}
+
+.cs_outline.info:hover {
+	background-color: var(--info-dark);
+	border: 2px solid var(--info-dark);
+	color: white;
+}
+
+.cs_link.info {
+	background-color: white;
+	color: var(--info);
+}
+
+.cs_link.info:hover {
+	background-color: #eee;
+}
+
+th.info {
+	background-color: var(--info);
+  color: #fff;
+}
+
+tr.info {
+	background-color: var(--info);
+  color: #fff;
+}
+
+/* DANGER */
+
+.danger {
+	color: var(--danger);
+}
+
+.cs_btn.danger {
+	background-color: var(--danger);
+  color: #fff;
+}
+
+.cs_btn.danger:hover {
+	background-color: var(--danger-dark);
+  color: #fff;
+}
+
+.cs_btn_round.danger {
+	background-color: var(--danger);
+  color: #fff;
+}
+
+.cs_btn_round.danger:hover {
+	background-color: var(--danger-dark);
+  color: #fff;
+}
+
+.cs_outline.danger {
+	border: 2px solid var(--danger);
+	background-color: white;
+	color: var(--danger);
+}
+
+.cs_outline.danger:hover {
+	background-color: var(--danger-dark);
+	border: 2px solid var(--danger-dark);
+	color: white;
+}
+
+.cs_link.danger {
+	background-color: white;
+	color: var(--danger);
+}
+
+.cs_link.danger:hover {
+	background-color: #eee;
+}
+
+th.danger {
+	background-color: var(--danger);
+  color: #fff;
+}
+
+tr.danger {
+	background-color: var(--danger);
+  color: #fff;
+}
+
+/* default */
+
+.default {
+	color: var(--default);
+}
+
+.cs_btn.default {
+	background-color: var(--default);
+  color: #fff;
+}
+
+.cs_btn.default:hover {
+	background-color: var(--default-dark);
+  color: #fff;
+}
+
+.cs_btn_round.default {
+	background-color: var(--default);
+  color: #fff;
+}
+
+.cs_btn_round.default:hover {
+	background-color: var(--default-dark);
+  color: #fff;
+}
+
+.cs_outline.default {
+	border: 2px solid var(--default);
+	background-color: white;
+	color: var(--default);
+}
+
+.cs_outline.default:hover {
+	background-color: var(--default-dark);
+	border: 2px solid var(--default-dark);
+	color: white;
+}
+
+.cs_link.default {
+	background-color: white;
+	color: var(--default);
+}
+
+.cs_link.default:hover {
+	background-color: #eee;
+}
+
+th.default {
+	background-color: var(--default);
+  color: #fff;
+}
+
+tr.default {
+	background-color: var(--default);
+  color: #fff;
+}
+
+/* GRIDS */
+.cs_row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.cs_c_2 {
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+
+.cs_c_3  {
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+}
+
+.cs_c_4  {
+	float: left;
+	width: 25%;
+	padding: 10px;
+}
+
+.cs_c_66p {
+	float: left;
+	width: 66.66666%;
+	padding: 10px;
+}
+
+.cs_c_33p {
+	float: left;
+	width: 33.33333%;
+	padding: 10px;
+}
+
+/* TABLES */
+table.cs_table {
+	border-collapse: separate;
+	border: 0.5px solid lightgray;
+	border-spacing: 0px;
+	border-radius: 10px;
+}
+
+th {
+	border-bottom: 0.5px solid lightgray;
+	border-left: 0.5px solid lightgray;
+	border-right: 0.5px solid lightgray;
+	color: white;
+	padding: 15px;
+}
+
+td {
+	padding: 15px;
+	text-align: left;
+	border-left: 0.5px solid lightgray;
+	border-right: 0.5px solid lightgray;
+}
+
+th:first-of-type {
+  border-top-left-radius: 10px;
+}
+th:last-of-type {
+  border-top-right-radius: 10px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+
+/* SIDENAV */
+
+.cs_nav_side {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.cs_nav_side a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.cs_nav_side a:hover {
+  color: #f1f1f1;
+}
+
+.cs_content {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* HERO */
+.cs_hero_img {
+  background-image: url("https://w.wallhaven.cc/full/13/wallhaven-13mk9v.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.cs_hero_txt {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.cs_border {
+	border-style: solid;
+	border-width: 1px;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.cs_border.borderxl {
+	border-style: solid;
+	border-width: 1px;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.cs_border.borders {
+	border-style: solid;
+	border-width: 1px;
+  border-radius: 16px;
+  border-color: #575757;
+  padding: 5px;
+}
+
+
+@media screen and (max-width: 900px) {
+	.cs_c_4 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cs_c_66p, .cs_c_33p, .cs_c_2, .cs_c_3, .cs_c_4 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .cs_nav_side {padding-top: 15px;}
+  .cs_nav_side a {font-size: 18px;}
+}
