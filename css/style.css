@@ -1,64 +1,25 @@
-.cl2 {
-	background-color: #8686ff;
-	color: #fff ;
-}
-.cr2 {
-	background-color: #7b7be8;
-	color: #fff;
+.links {
+  margin-top: 10%;
 }
 
-
-
-.cl3 {
-	background-color: #8686ff;
-	color: #fff;
-}
-.cm3 {
-	background-color: #7b7be8;
-	color: #fff;
-}
-.cr3 {
-	background-color: #7272d6;
-	color: #fff;
+.box {
+  width: 30%;
 }
 
-
-
-.cl4 {
-	background-color: #8686ff;
-	color: #fff;
-}
-.cml4 {
-	background-color: #7b7be8;
-	color: #fff;
-}
-.cmr4 {
-	background-color: #7272d6;
-	color: #fff;
-}
-.cr4 {
-	background-color: #6565bf;
-	color: #fff;
+@media screen and (max-width: 600px) {
+ .box {
+   width: 70%;
+ }
 }
 
-
-
-.z1cl {
-	background-color: #8686ff;
-	color: #fff ;
-}
-.z1cr {
-	background-color: #7b7be8;
-	color: #fff;
+@media screen and (max-width: 800px) {
+ .box {
+   width: 50%;
+ }
 }
 
-
-
-.z2cl {
-	background-color: #8686ff;
-	color: #fff ;
-}
-.z2cr {
-	background-color: #7b7be8;
-	color: #fff;
+@media screen and (max-width: 800px) {
+ .box {
+   width: 70%;
+ }
 }
